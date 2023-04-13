@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Marca Personal como Desarrollador de Software: Sitio web y GitHub</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Shirley Alquicira" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Marca Personal como Desarrollador de Software: Sitio web y GitHub
+## Git
+### Shirley Alquicira
+### CCG-PGC
+### 2023/04/12 (updated: 2023-04-12)
+
+---
+
+
+
+
+&lt;style type="text/css"&gt;
+/* From https://github.com/yihui/xaringan/issues/147  */
+.scroll-output {
+  height: 80%;
+  overflow-y: scroll;
+}
+/* https://stackoverflow.com/questions/50919104/horizontally-scrollable-output-on-xaringan-slides */
+pre {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+&lt;/style&gt;
+
+## Contenido
+
+1. Introducción  
+2. Controlador de versiones  
+3.  Git  
+4. Comenzando a trabajar con Git  
+4.1. Instalar y configurar Git  
+4.2. Esquema de trabajo de Git  
+4.3. Crear un repositorio  
+4.4. Inicializar repositorio  
+4.5  Crear un programa y agregarlo a git  
+4.6. Commit  
+ 
+---
+
+# Git
+
+## Objetivo
+Al finalizar la lección, podremos llevar el control de las modificaciones que realicemos en nuestros programas, así como identificar cuáles fueron los cambios realizados y las fechas en que ocurrieron, todo esto haciendo uso de Git como controlador de versiones.
+
+
+---
+
+## Introducción
+__Vamos a comenzar a hacer software, pero… ¿qué queremos lograr con el desarrollo de software?__
+
+- Resolver algún problema  
+
+- Que nuestro código pueda ser utilizado por otras personas  
+
+- Que el software sea fácil de entender por mi y por los demás  
+
+- Que sea fácil realizar modificaciones  
+
+- ¡Colaborar con más gente!  
+
+---
+
+## Introducción  
+
+__Para lograrlo necesito...__
+
+- Utilizar estándares de codificación  
+  - PEP8 para Python  
+  - Guías de estilo de Google https://google.github.io/styleguide/   
+
+
+- Utilizar notaciones o estándares de nombrado  
+  - Camel case  
+  - Upper case  
+
+- Buenas prácticas  
+  - Encabezado de programas  
+  - Documentación interna  
+  - Nombrado adecuado de variables y métodos/funciones  
+  - Nombrado adecuado de los programas  
+  - Organización adecuada del código (carpetas y archivos)  
+  - Compartir el código con mis compañeros para obtener retroalimentación  
+
+- Control de versiones del código  
+
+
+---
+
+## Control de versiones
+
+&lt;img src="img/versiones.png" width="750px" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Control de versiones 
+
+&lt;img src="img/documento.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Control de versiones 
+
+&lt;img src="img/word.gif" width="450px" style="display: block; margin: auto;" /&gt;
+
+---
+
+## ¿Cómo puedo controlar mi código? 
+
+__Forma manual__
+
+El versionamiento está constituido por dos dígitos, versiones primarias y secundarias (X.Y).
+
+&lt;img src="img/versionManual.png" width="150px" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+Reglas:
+
+&lt;img src="img/reglas.png" width="650px" style="display: block; margin: auto auto auto 0;" /&gt;
+
+---
+
+
+## ¿Cómo puedo controlar mi código? 
+
+__Forma manual__ 
+
+Aplicando las reglas...  
+
+- Agregar línea de código (algunos print, comentarios internos):   myScript_v0.1.py  
+
+- Cambiar el nombre de una variable:                               myScript_v0.2.py  
+
+- Borrar varias funciones del código:                              myScript_v1.0.py  
+
+- Agregar un método:                                               myScript_v2.0.py  
+
+
+---
+
+
+## ¿Cómo puedo controlar mi código? 
+
+__Forma automática__  
+por medio de un sistema de control de versiones.  
+
+&lt;img src="img/controladores.png" width="450px" style="display: block; margin: auto;" /&gt;
+    
+
+---
+
+## ¿Cómo puedo controlar mi código? 
+
+Un sistema de control de versiones es una herramienta que se encarga por nosotros de __controlar__ todos los cambios que realicemos en nuestros programas, creando __diferentes versiones de nuestros archivos__.  
+
+Además, nos permite decidir cuales cambios serán aplicados para la siguiente versión (cada registro de estos cambios es llamado como _commit_), además de presentar metadatos acerca de ellos.  
+
+Los sistemas de control de versiones no son nuevos. Herramientas como CVS, o Subversion han estado presentes desde inicios de 1980. Sin embargo, estos han sido considerados anticuados debido a limitaciones en sus capacidades. Actualmente, existen modernos sistemas como Git y Mercurial, que incluyen poderosas herramientas para el trabajo colaborativo y concurrente en los archivos. 
+
+
+---
+
+## ¿Cómo puedo controlar mi código? 
+
+- Usar un sistema de control de versiones es como si tuvieramos un “undo” o “deshacer” ilimitado.  
+
+- Un sistema de control de versiones también permite que muchas personas trabajen en paralelo.  
+
+&lt;img src="img/admiracion.png" width="250px" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+---
+
+## Pero… ¿Qué es Git?
+
+- Es un sistema de control de versiones para _rastrear los cambios de nuestro código_ durante el desarrollo del software.  
+
+- Está diseñado para coordinar el trabajo entre los programadores o contribuidores.  
+
+
+&lt;img src="img/logo_git.png" width="250px" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+---
+
+## ¿Cómo trabajo con Git? 
+
+__Git de manera local:__  
+- Solo yo puedo tener acceso al código  
+- Puedo controlar en mi computadora los cambios que haga al código  
+- Mi software se vuelve solo de uso personal  
+
+__Git + GitHub:__ 
+- Permitiendo trabajar conjuntamente en una idea  
+- Formar una comunidad de varias personas trabajando en un fin común  
+- Contribuir a mejorar el código  
+- Acceso al código, leerlo, estudiarlo y aprender de él, e incluso hacer cambios y experimentar sin afectar el código original  
+
+
+---
+
+
+## Trabajando con Git y GitHub 
+
+&lt;img src="img/git-github.png" width="750px" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Comenzando a trabajar con Git 
+
+1. Instalar y configurar Git  
+2. Esquema de trabajo de Git  
+3. Crear un repositorio  
+4. Inicializar repositorio  
+5. Crear un programa y agregarlo a git  
+6. Commit  
+7. Explorando el historial  
+8. Comparando archivos  
+9. Ignorando archivos  
+.  
+
+&lt;img src="img/gitLocal.png" width="450px" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Tarea
+
+## Instalación de Git 
+
+Revisar si Git está instalado  
+
+- Abrir una terminal (símbolo del sistema en windows):  
+- Ejecutar el comando:  
+
+`git --version`  
+
+Si Git no está disponible...  
+
+_Windows:_  &lt;https://gitforwindows.org/&gt;  
+
+_MacOS:_ &lt;https://git-scm.com/download/mac&gt;   
+
+_Linux:_ 
+Debian/Ubuntu: `sudo apt-get install git`  
+Fedora: `sudo dnf install git`
+
+
+---
+
+# Tarea
+
+## Crear cuenta de usuario en GitHub
+
+- Ir a la dirección: &lt;https://github.com&gt;  
+
+----- Nombre de usuario  
+----- Correo electrónico  
+----- Contraseña  
+
+*Verificar cuenta de correo electrónico  
+
+
+---
+
+## Configuración de Git
+
+Definiendo mi nombre y correo electrónico:  
+
+`git config --global user.name ”[tuNombre]”`  
+`git config --global user.email [tuEmail]`  
+
+El username e email estarán asociados a las siguientes actividades con Git, así como con la interacción GitHub, por lo que se sugiere que el email que se defina sea el mismo que se utilice al momento de crear nuestra cuenta de GitHub.
+
+Para ver los valores de configuración de Git:  
+`git config --list`
+
+
+---
+
+
+## Esquema de trabajo de Git
+
+
+&lt;img src="img/esquemaGit.png" width="650px" style="display: block; margin: auto;" /&gt;
+
+_Repositorio_: carpeta que contiene el seguimiento de los cambios que se realicen en el código. 
+
+---
+
+## Creando un repositorio controlado por Git
+
+- Definir la ruta de trabajo  
+`/Users/tuUsuario/Desktop`  
+
+- Crear una carpeta  
+`mkdir pythonI`  
+
+- Entrar a la carpeta  
+`cd pythonI`  
+
+- Crear la estructura interna  
+`mkdir doc lib src test`  
+
+__Buenas prácticas__  
+Seguir una estructura de organización de carpetas y archivos para nuestros proyectos.
+
+&lt;img src="img/estructuraDir.png" width="650px" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+## Creando un repositorio controlado por Git
+
+- Inicializar el repositorio Git  
+`git init`  
+
+- Revisar el repositorio  
+`ls -la`  
+
+- Comprobar repositorio  
+`git status`  
+
+&lt;img src="img/gitInit.png" width="750px" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+##  Actividad
+
+Imaginemos que dentro del directorio `pythonI`:
+
+\# Creamos un sub-directorio llamado analysis  
+`$ mkdir analysis`  
+
+\# Vamos al directorio analysis  
+`$ cd analysis`  
+
+\# Inicializamos un repositorio Git  
+`$ git init`  
+
+
+__¿Les parece que esta sea una buena idea?__
+
+&lt;img src="img/pensando.png" width="200px" style="display: block; margin: auto auto auto 0;" /&gt;
+
+
+---
+
+## Creando un repositorio controlado por Git
+
+`git init` inicializa un repositorio Git.
+
+
+Git almacena y controla todos los cambios que se hagan en el contenido del repositorio mediante el directorio `.git`
+
+&lt;img src="img/admiracion.png" width="150px" style="display: block; margin: auto;" /&gt;
+
+---
+
+##  Controlando los cambios con Git
+
+1.  Entrar al directorio  			
+`cd pythonI`
+
+2. Descargar de la plataforma de cursos la carpeta data-git  
+
+3. Copiar el programa: reverse-complement.py  
+`cp ../../Downloads/data-git/reverse-complement.py ./src/`  
+
+4. Indicar a Git que controle los cambios de mi programa  
+`git add reverse-complement.py`
+
+5. Confirmar los cambios realizados  		
+`git commit –m “Mensaje”`
+
+
+---
+
+##  Controlando los cambios con Git
+
+&lt;img src="img/flujoGit.png" width="750px" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Resumen
+
+- Git: sistemas de control de versiones  
+- Esquema de trabajo de Git  
+&lt;img src="img/esquemaGit2.png" width="450px" style="display: block; margin: auto;" /&gt;
+
+__Comandos Git:__
+
+`git init` inicializar repositorio Git
+
+`git add` agregar y dar seguimiento a los archivos del repositorio Git
+
+`git commit –m “Mensaje”` Formalizar/asegurar los cambios realizados en el repositorio
+
+
+
+---
+
+
+
+---
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+  .logo {
+    background-image: url(img/ccg-pgc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 110px;
+    height: 128px;
+    z-index: 0;
+  }
+  </style>
+  
+  <script>
+  document
+    .querySelectorAll(
+      '.remark-slide-content' +
+      ':not(.title-slide)' +
+      // add additional classes to exclude here, e.g.
+      // ':not(.inverse)' +
+      ':not(.hide-logo)'
+    )
+    .forEach(el => {
+      el.innerHTML += '<div class="logo"></div>';
+    });
+  </script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
