@@ -1,0 +1,103 @@
+---
+title: "Marca Personal como Desarrollador de Software: Sitio web y GitHub"
+--subtitle: ""
+--author: ''
+institute: "Centro de Ciencias Genómicas, UNAM"
+date: 'First version: yyy-mm-dd; Last update: `r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "hygge"]
+    lib_dir: libs
+    includes:
+      after_body: insert-logo.html
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "macros.js"
+
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{css, echo = FALSE}
+/* From https://github.com/yihui/xaringan/issues/147  */
+.scroll-output {
+  height: 80%;
+  overflow-y: scroll;
+}
+/* https://stackoverflow.com/questions/50919104/horizontally-scrollable-output-on-xaringan-slides */
+pre {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+```
+
+## Objetivo del taller.
+El objetivo es dar al alumno 2 herramientas que le permitan posicionarse como desarrollador de software: creando su página personal y teniendo un repositorio de alojamiento de software público.
+
+
+---
+
+## Contenido del Taller
+
+- Introducción
+
+- Buenas prácticas para el desarrollo de software
+
+- Creando html usando Rmarkdown
+
+- Repositorio de código y pagina web con git y github
+
+- Creando el sitio web
+
+
+---
+
+## Overview
+
+![esquema]("img/esquema.PNG")
+
+
+---
+## ¿Qué es la marca personal?
+
+.content-box-blue[
+"La Personal Brander Nancy Vázquez, Co-Fundadora de una de las principales agencias de Personal Branding, define a la **marca personal** como el buen desarrollo y difusión del valor agregado que ningún otro profesional puede aportar al mercado y que se convertirá en la **huella** por la que los reclutadores o clientes eligen un talento sobre otro."
+
+]
+
+.tiny[
+Fuente: https://es.wikipedia.org/wiki/Marca_personal
+]
+
+---
+
+## Marca personal
+
+- **Reclutadores de talento**: La búsqueda ya no se limita a la espera de solicitudes sino a la revisión de diversas plataformas como LinkedIn, Stack Over Flow y cualquier espacio donde pueda encontrar el mejor talento en programación.
+
+- **No basta con el talento**: La competencia en esta industria es dura. Pero si somos invisibles lo es aún más. Ser un buen programador ya no es suficiente, tienes que hacerte visible para que volteen a verte.
+
+
+.tiny[
+Fuente: https://talently.tech/blog/desarrollar-marca-personal-programador/
+]
+
+---
+
+## Pasos para crear tu marca personal
+
+- Actualiza tu perfil en **LinkedIn** con contenido de valor
+- Muéstrale al mundo lo que haces con un **portafolio online**
+- Construye una reputación subiendo **código en Github**
+- Crea un **sitio web profesional** que proyecte quién eres
+- Abre un **blog sobre programación**
+- Establece una **línea gráfica** para tu marca personal
+- Céntrate en un **nicho específico**
+
+
+
+
