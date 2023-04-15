@@ -51,7 +51,7 @@ pre {
 # Git
 
 ## Objetivo
-Al finalizar la lección, podremos llevar el control de las modificaciones que realicemos en nuestros programas, así como identificar cuáles fueron los cambios realizados y las fechas en que ocurrieron, todo esto haciendo uso de Git como controlador de versiones.
+Al finalizar la lección, podremos llevar el control de las modificaciones que realicemos en nuestros programas, así como identificar cuáles fueron los cambios realizados y las fechas en que ocurrieron, todo esto haciendo uso de *Git* como controlador de versiones.
 
 
 ---
@@ -92,7 +92,7 @@ __Para lograrlo necesito...__
   - Organización adecuada del código (carpetas y archivos)  
   - Compartir el código con mis compañeros para obtener retroalimentación  
 
-- Control de versiones del código  
+- *Control de versiones del código*  
 
 
 ---
@@ -161,7 +161,7 @@ Aplicando las reglas...
 ## ¿Cómo puedo controlar mi código? 
 
 __Forma automática__  
-por medio de un sistema de control de versiones.  
+Por medio de un sistema de control de versiones.  
 
 ```{r, out.width = "450px",fig.align='center'}
 knitr::include_graphics("img/controladores.png")
@@ -174,7 +174,7 @@ knitr::include_graphics("img/controladores.png")
 
 Un sistema de control de versiones es una herramienta que se encarga por nosotros de __controlar__ todos los cambios que realicemos en nuestros programas, creando __diferentes versiones de nuestros archivos__.  
 
-Además, nos permite decidir cuales cambios serán aplicados para la siguiente versión (cada registro de estos cambios es llamado como _commit_), además de presentar metadatos acerca de ellos.  
+Además, nos permite decidir cuales cambios serán aplicados para la siguiente versión (cada registro de estos cambios es llamado como _commit_), incluyendonmetadatos acerca de ellos.  
 
 Los sistemas de control de versiones no son nuevos. Herramientas como CVS, o Subversion han estado presentes desde inicios de 1980. Sin embargo, estos han sido considerados anticuados debido a limitaciones en sus capacidades. Actualmente, existen modernos sistemas como Git y Mercurial, que incluyen poderosas herramientas para el trabajo colaborativo y concurrente en los archivos. 
 
@@ -193,7 +193,7 @@ knitr::include_graphics("img/admiracion.png")
 
 ---
 
-## Pero… ¿Qué es Git?
+## Pero… ¿qué es Git?
 
 - Es un sistema de control de versiones para _rastrear los cambios de nuestro código_ durante el desarrollo del software.  
 
@@ -250,8 +250,6 @@ knitr::include_graphics("img/gitLocal.png")
 
 ---
 
-# Tarea
-
 ## Instalación de Git 
 
 Revisar si Git está instalado  
@@ -274,8 +272,6 @@ Fedora: `sudo dnf install git`
 
 ---
 
-# Tarea
-
 ## Crear cuenta de usuario en GitHub
 
 - Ir a la dirección: <https://github.com>  
@@ -293,8 +289,14 @@ Fedora: `sudo dnf install git`
 
 Definiendo mi nombre y correo electrónico:  
 
-`git config --global user.name ”[tuNombre]”`  
-`git config --global user.email [tuEmail]`  
+`git config --global user.name ”tuNombre”`  
+
+git config --global user.name "shirleyah"  
+
+`git config --global user.email tuEmail`  
+
+git config --global user.email shirley.alquicira@gmail.com  
+
 
 El username e email estarán asociados a las siguientes actividades con Git, así como con la interacción GitHub, por lo que se sugiere que el email que se defina sea el mismo que se utilice al momento de crear nuestra cuenta de GitHub.
 
@@ -322,10 +324,10 @@ _Repositorio_: carpeta que contiene el seguimiento de los cambios que se realice
 `/Users/tuUsuario/Desktop`  
 
 - Crear una carpeta  
-`mkdir pythonI`  
+`mkdir chat–ia-app`  
 
 - Entrar a la carpeta  
-`cd pythonI`  
+`cd chat–ia-app`  
 
 - Crear la estructura interna  
 `mkdir doc lib src test`  
@@ -360,7 +362,7 @@ knitr::include_graphics("img/gitInit.png")
 
 ##  Actividad
 
-Imaginemos que dentro del directorio `pythonI`:
+Imaginemos que dentro del directorio `chat–ia-app`:
 
 \# Creamos un sub-directorio llamado analysis  
 `$ mkdir analysis`  
@@ -397,15 +399,14 @@ knitr::include_graphics("img/admiracion.png")
 ##  Controlando los cambios con Git
 
 1.  Entrar al directorio  			
-`cd pythonI`
+`cd chat–ia-app`
 
-2. Descargar de la plataforma de cursos la carpeta data-git  
+2. Entrar a la carpeta src  
 
-3. Copiar el programa: reverse-complement.py  
-`cp ../../Downloads/data-git/reverse-complement.py ./src/`  
+3. Editar el programa: __chatgpt-api.py__. Cambiar el contexto por <<<<>>>>>>>>  
 
 4. Indicar a Git que controle los cambios de mi programa  
-`git add reverse-complement.py`
+`git add chatgpt-api.py`
 
 5. Confirmar los cambios realizados  		
 `git commit –m “Mensaje”`

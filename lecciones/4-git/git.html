@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 ## Git
 ### Shirley Alquicira
 ### CCG-PGC
-### 2023/04/12 (updated: 2023-04-12)
+### 2023/04/12 (updated: 2023-04-15)
 
 ---
 
@@ -54,7 +54,7 @@ pre {
 # Git
 
 ## Objetivo
-Al finalizar la lección, podremos llevar el control de las modificaciones que realicemos en nuestros programas, así como identificar cuáles fueron los cambios realizados y las fechas en que ocurrieron, todo esto haciendo uso de Git como controlador de versiones.
+Al finalizar la lección, podremos llevar el control de las modificaciones que realicemos en nuestros programas, así como identificar cuáles fueron los cambios realizados y las fechas en que ocurrieron, todo esto haciendo uso de *Git* como controlador de versiones.
 
 
 ---
@@ -95,7 +95,7 @@ __Para lograrlo necesito...__
   - Organización adecuada del código (carpetas y archivos)  
   - Compartir el código con mis compañeros para obtener retroalimentación  
 
-- Control de versiones del código  
+- *Control de versiones del código*  
 
 
 ---
@@ -154,7 +154,7 @@ Aplicando las reglas...
 ## ¿Cómo puedo controlar mi código? 
 
 __Forma automática__  
-por medio de un sistema de control de versiones.  
+Por medio de un sistema de control de versiones.  
 
 &lt;img src="img/controladores.png" width="450px" style="display: block; margin: auto;" /&gt;
     
@@ -165,7 +165,7 @@ por medio de un sistema de control de versiones.
 
 Un sistema de control de versiones es una herramienta que se encarga por nosotros de __controlar__ todos los cambios que realicemos en nuestros programas, creando __diferentes versiones de nuestros archivos__.  
 
-Además, nos permite decidir cuales cambios serán aplicados para la siguiente versión (cada registro de estos cambios es llamado como _commit_), además de presentar metadatos acerca de ellos.  
+Además, nos permite decidir cuales cambios serán aplicados para la siguiente versión (cada registro de estos cambios es llamado como _commit_), incluyendonmetadatos acerca de ellos.  
 
 Los sistemas de control de versiones no son nuevos. Herramientas como CVS, o Subversion han estado presentes desde inicios de 1980. Sin embargo, estos han sido considerados anticuados debido a limitaciones en sus capacidades. Actualmente, existen modernos sistemas como Git y Mercurial, que incluyen poderosas herramientas para el trabajo colaborativo y concurrente en los archivos. 
 
@@ -182,7 +182,7 @@ Los sistemas de control de versiones no son nuevos. Herramientas como CVS, o Sub
 
 ---
 
-## Pero… ¿Qué es Git?
+## Pero… ¿qué es Git?
 
 - Es un sistema de control de versiones para _rastrear los cambios de nuestro código_ durante el desarrollo del software.  
 
@@ -233,8 +233,6 @@ __Git + GitHub:__
 
 ---
 
-# Tarea
-
 ## Instalación de Git 
 
 Revisar si Git está instalado  
@@ -257,8 +255,6 @@ Fedora: `sudo dnf install git`
 
 ---
 
-# Tarea
-
 ## Crear cuenta de usuario en GitHub
 
 - Ir a la dirección: &lt;https://github.com&gt;  
@@ -276,8 +272,13 @@ Fedora: `sudo dnf install git`
 
 Definiendo mi nombre y correo electrónico:  
 
-`git config --global user.name ”[tuNombre]”`  
-`git config --global user.email [tuEmail]`  
+`git config --global user.name _”tuNombre”_`  
+
+git config --global user.name "shirleyah"  
+
+`git config --global user.email _tuEmail_`  
+
+
 
 El username e email estarán asociados a las siguientes actividades con Git, así como con la interacción GitHub, por lo que se sugiere que el email que se defina sea el mismo que se utilice al momento de crear nuestra cuenta de GitHub.
 
