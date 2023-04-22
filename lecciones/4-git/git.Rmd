@@ -439,11 +439,147 @@ __Comandos Git:__
 `git commit –m “Mensaje”` Formalizar/asegurar los cambios realizados en el repositorio
 
 
+---
+
+## Algunas preguntas...
+
+__¿Una vez creado el repositorio Git puedo moverlo a una nueva ubicación?__  
+
+Si, mientras el directorio .git no se vea afectado, Git seguirá controlando los cambios en el repositorio sin importar que se haya movido a otro lugar.  
+
+
+
+__¿Puedo modificar el mensaje de un commit?__  
+
+Si. Puedes podificar el mensaje del commit más reciente:
+
+`git commit --amend -m ”Mensaje”`
+
 
 ---
 
+## Historial de versiones (commits)
+
+`git log` lista todos los commits realizados en el repositorio en orden cronológico inverso.  
+
+`git log –N` donde N indica el número de commits que queremos obtener.  
+
+```{r, out.width = "650px",fig.align='center'}
+knitr::include_graphics("img/gitlog.png")
+```
 
 
 ---
+
+## Historial de versiones (commits)
+
+`git log --oneline` información reducida  
+
+```{r, out.width = "650px",fig.align='center'}
+knitr::include_graphics("img/gitOneline.png")
+```
+
+---
+
+## ¿Cómo identifico el estado de mi repositorio Git?
+
+`git status`  
+
+indica el estado de los archivos que pueden ser controlados por Git, o aquellos que ya están controlados pero se han modificado.
+
+
+---
+
+## Actividad
+
+1. Editar el programa: __chatgpt-api.py__. Cambiar las descripciones del menú presentado en **table.add_row**   
+
+2. Conocer el estado del repositorio  
+`git status` 
+
+3. Identificar archivos sin seguimiento  
+`git status -u`  
+
+4. Indicar a Git que controle los cambios de mi programa  
+`git add chatgpt-api.py`
+
+5. Confirmar los cambios realizados  		
+`git commit –m “Mensaje”`
+
+
+---
+
+## ¿Cuándo restaurar una versión?  
+
+Revisar el estado del repositorio  
+`$ git status` 
+
+Identificando los cambios realizados  
+`$ git diff [#commit] chatgpt-api.py` 
+
+Restaurar el programa al commit anterior  
+`git checkout [IdCommit] chatgpt-api.py`
+
+
+
+---
+
+## Ignorando archivos
+
+**¿Qué pasa si hay archivos que no quiero controlar?**  
+
+Por ejemplo, archivos de respaldo creados automáticamente por nuestro editor, por el sistema operativo, o aquellos archivos de prueba creados durante el análisis de nuestros datos, archivos de configuración (passwords)...  
+
+**Archivo:    .gitignore**
+
+Crear directorio y archivos de prueba  
+`$ mkdir results`  
+`$ touch a.dat b.dat c.dat results/a.out results/b.out`  
+Comprobando el estado de nuestro repositorio  
+`$ git status`  
+Creando archivo .gitignore en el directorio raíz  
+`$ nano .gitignore`  
+Agregar las líneas:  
+`*.dat`   
+`results/`  
+Comprobando el estado de nuestro repositorio  
+`$ git status` 
+
+---
+
+## Actividad
+
+Dado un archivo .gitignore con el siguiente contenido  
+
+`*.data`  
+`!*.data`  
+
+¿Cuál sería el resultado?  
+
+El modificador ! negará la primera instrucción en el archivo .gitignore, por lo que todos los archivos .data serán controlados.  
+
+
+
+---
+
+## Resumen
+
+__git add__: pone los archivos al área de preparación (staging area)  
+
+__git commit__:guarda el contenidos del área de preparación como un nuevo commit en el repositorio local. Indicando por medio de un mensaje los cambios realizados
+
+__git status [-u]__:muestra el estado del repositorio, indicando los archivos que pueden ser guardados/controlados en el directorio de trabajo, archivos que pueden pasar al área de preparación y aquellos archivos que pueden pasar al repositorio
+
+__git log__: lista todos los commits realizados en el repositorio  
+
+__git diff__: Comparar un archivo vs un commit en particular  
+
+__git checkout__: Restaurar una versión  
+ 
+ 
+```{r, out.width = "100px",fig.align='right'}
+knitr::include_graphics("img/admiracion.png")
+```
+
 
 ---
