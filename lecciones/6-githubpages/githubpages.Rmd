@@ -254,6 +254,13 @@ Ejemplo:
 Nota: arrastrar los archivos a GitHub.
 ---
 
+## Templates  
+
+Exsten muchos diseños o templates creados por otras personas o grupos que podemos reutilizar para diseñar nuesto sitio web.
+
+[GitHub Pages themes](https://github.com/pages-themes)
+---
+
 
 
 
