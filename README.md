@@ -46,7 +46,7 @@ Python ( preferible pero no obligatorio)
 
 #### Maintainers:
 
-    Heladia Salgado O.: @Helysalgado
-    Shirley Alquicira H.
+- Heladia Salgado O.: @Helysalgado
+- Shirley Alquicira H.
     
     
