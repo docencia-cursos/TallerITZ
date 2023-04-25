@@ -15,11 +15,11 @@ Para ganar visibilidad hay que hacer varias cosas, pero en este curso abordaremo
 - Computadora personal con acceso a internet
 
 - Herramientas previamente instaladas
-       - R  y RStudio (https://posit.co/download/rstudio-desktop/)
-       - Git  (https://gitforwindows.org/)
-       - VisualStudioCode u otro editor (https://code.visualstudio.com/download)
-       - Joplin(https://joplinapp.org/download/) o Laverna (https://laverna.cc/#download)
-       - GitHub Desktop
+  - R  y RStudio (https://posit.co/download/rstudio-desktop/)   
+  - Git  (https://gitforwindows.org/)  
+  - VisualStudioCode u otro editor (https://code.visualstudio.com/download)  
+  - Joplin(https://joplinapp.org/download/) o Laverna (https://laverna.cc/#download)  
+  - GitHub Desktop  
 
 - Cuenta en GitHub (https://github.com/)
 
