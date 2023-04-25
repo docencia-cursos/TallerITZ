@@ -36,68 +36,293 @@ pre {
 ```
 
 ## Objetivo del taller.
-El objetivo es dar al alumno 2 herramientas que le permitan posicionarse como desarrollador de software: creando su página personal y teniendo un repositorio de alojamiento de software público.
+
+Que el alumno entienda y construya su marca personal como desarrollador de software a través de crear su repositorio de software público y su página web personal.
+
+---
+## Justificación
+
+Construir una marca personal como programador es indispensable para ganar visibilidad y logres que las empresas o colaboradores te encuentren.
+
+Para ganar visibilidad hay que hacer varias cosas, pero en este curso abordaremos dos de ellas que consideramos básicas y que puedes hacer, desde que haces tus primeras líneas de código. Primero veremos cómo puedes conseguir buena reputación escribiendo software mantenible y compartiéndolo con otros, y en segundo lugar veremos cómo construir tu sitio web de manera gratuita, que será tu tarjeta de presentación en el mundo online.
 
 
 ---
 
 ## Contenido del Taller
 
-- Introducción
 
-- Buenas prácticas para el desarrollo de software
+1. **Introducción**
 
-- Creando html usando Rmarkdown
+2. Preparar mi software para el portafolio de proyectos (buenas prácticas)
 
-- Repositorio de código y pagina web con git y github
+3. Como construir un portafolio de proyectos
+       - Markdown
+       - Rstudio y Rmarkdown
+       - Git y GitHub
+       
+4. Como construir mi página web personal
+      - GitHubPages
 
-- Creando el sitio web
-
-
----
-
-## Overview
-
-![esquema]("img/esquema.PNG")
 
 
 ---
 ## ¿Qué es la marca personal?
 
+.pull-left[
+
 .content-box-blue[
-"La Personal Brander Nancy Vázquez, Co-Fundadora de una de las principales agencias de Personal Branding, define a la **marca personal** como el buen desarrollo y difusión del valor agregado que ningún otro profesional puede aportar al mercado y que se convertirá en la **huella** por la que los reclutadores o clientes eligen un talento sobre otro."
+"La *Personal Brander Nancy Vázquez*, Co-Fundadora de una de las principales agencias de Personal Branding, define a la **marca personal** como el buen desarrollo y difusión del valor agregado que ningún otro profesional puede aportar al mercado y que se convertirá en la **huella** por la que los reclutadores o clientes eligen un talento sobre otro."
+
 
 ]
 
 .tiny[
 Fuente: https://es.wikipedia.org/wiki/Marca_personal
 ]
+]
+
+--
+
+.pull-right[
+
+```{r , echo=FALSE, out.width='100%', fig.align='right', fig.cap=''}
+knitr::include_graphics("https://rosanarosas.com/wp-content/uploads/2017/02/marca-personal-2.png")
+```
+
+.tiny[
+Fuente: [Rosana Rosas: Marca Personal](https://rosanarosas.com/wp-content/uploads/2017/02/marca-personal-2.png)
+]
+]
 
 ---
 
 ## Marca personal
 
+.pull-left[
 - **Reclutadores de talento**: La búsqueda ya no se limita a la espera de solicitudes sino a la revisión de diversas plataformas como LinkedIn, Stack Over Flow y cualquier espacio donde pueda encontrar el mejor talento en programación.
 
-- **No basta con el talento**: La competencia en esta industria es dura. Pero si somos invisibles lo es aún más. Ser un buen programador ya no es suficiente, tienes que hacerte visible para que volteen a verte.
+- **No basta con el talento**: La competencia en esta industria es dura. Pero si somos invisibles lo es aún más. Ser un buen programador ya no es suficiente, tienes que **hacerte visible** para que volteen a verte.
 
 
 .tiny[
 Fuente: https://talently.tech/blog/desarrollar-marca-personal-programador/
 ]
+]
+
+.pull-right[
+
+```{r , echo=FALSE, out.width='100%', fig.align='right', fig.cap=''}
+knitr::include_graphics("https://1.bp.blogspot.com/-S4doHPacymA/X40QrTJnbvI/AAAAAAAAGAk/Sqewk3M-jEkZAzW55LgKS0DnIuGkDLrIwCLcBGAsYHQ/w640-h320/marcapersonal.jpg")
+```
+
+.tiny[
+Fuente: [¿Cómo crear tu marca personal? ](https://blog.conducetuempresa.com/2016/06/como-construir-tu-marca-personal.html)
+]
+]
+
 
 ---
-
 ## Pasos para crear tu marca personal
 
 - Actualiza tu perfil en **LinkedIn** con contenido de valor
+
 - Muéstrale al mundo lo que haces con un **portafolio online**
+
 - Construye una reputación subiendo **código en Github**
+
 - Crea un **sitio web profesional** que proyecte quién eres
+
 - Abre un **blog sobre programación**
+
 - Establece una **línea gráfica** para tu marca personal
+
 - Céntrate en un **nicho específico**
 
+```{r , echo=FALSE, out.width='30%', fig.align='right', fig.cap=''}
+knitr::include_graphics("https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2021/03/marca-personal-para-ingenieros-de-software-1.jpg")
+```
+.tiny[
+Fuente: [5 Pasos para desarrollar tu marca personal como programador ](https://talently.tech/blog/desarrollar-marca-personal-programador/)
+]
 
+---
+## LinkedIn: !Haz tu Perfil!
+
+.content-box-yellow[
+
+Esencial para :
+
+- Búsqueda pasiva de trabajo. LinkedIn Talents usado por los recruiters para buscar candidatos.
+
+- CV siempre preparado. 
+]
+
+--
+
+.pull-left[
+- [Gabriel Alarcón - ITZ](https://www.linkedin.com/in/gabriel-alarcon-carranza-8a9509166/)
+
+- [Martín Jair Díaz - ITZ](https://www.linkedin.com/in/jairdr/)
+
+- [Andrés López - ITZ](https://www.linkedin.com/in/andres-gerardo-l%C3%B3pez-almazo-22684b1a4/)
+
+- [Robby Leonardi - Pratt Institute](https://www.linkedin.com/in/rleonardi/)
+
+]
+
+.pull-right[
+
+```{r , echo=FALSE, out.width='80%', fig.align='right', fig.cap=''}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png")
+```
+
+]
+
+---
+## LinkedIn
+
+Por lo tanto: 
+
+- Actualiza constantemente tu perfil con contenido de valor sobre tu sector
+  
+  - visibilidad a proyectos web que te han inspirado, 
+      
+  - tendencias o incluso promocionar tus propios trabajos
+  
+--
+
+- Si ya trabajas, comparte lo que aprendes, las herramientas o procesos que usas.
+
+--
+
+- Elabora un calendario de publicaciones para tu perfil.
+
+--
+
+- Da feedback a las publicaciones de otros colegas y elogiar su trabajo (networking)
+
+---
+## Portafolio Online
+
+.content-box-yellow[
+
+Un **portafolio** es la compilación de tus mejores trabajos que puedes compartir con potenciales clientes. A diferencia de un currículum vitae, tu portafolio muestra tu trabajo y cómo lo haces.
+
+]
+
+--
+
+.content-box-green[
+
+Crea un portafolio con tus trabajos más relevantes que **resalten tus habilidades** como desarrollador de software.
+
+Selecciona aquellos trabajos donde te sientas orgulloso de mostrarlos al mundo (bien documentado, comentado, apegado a estándares)
+
+]
+
+---
+## Recursos para Portafolio Online
+
+- Curso Udemy. Al momento de buscar trabajo como programador, el ingrediente clave es la práctica, es decir contar con proyectos hechos para poder demostrar que tienes experiencia en desarrollo.
+[10 Proyectos Completos para tu Portafolio de Programador.](https://www.udemy.com/course/proyectos-para-tu-portafolio-de-programador/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Coding_v.NONP_la.ES_cc.MX&utm_term=_._ag_133513859000_._ad_568361977577_._kw__._de_c_._dm__._pl__._ti_dsa-1585702548637_._li_1010163_._pd__._&matchtype=&gclid=CjwKCAjw0ZiiBhBKEiwA4PT9z6WGPzfp8AC-l5aJFBacMk5iZMShcCis0zsYDD6k3jZ51oSoB7taTxoCs6oQAvD_BwE)
+
+- FreeCodeCamp. [15 Portafolios de Desarrolladores Web para inspirarte ](https://www.freecodecamp.org/espanol/news/ejemplos-de-portafolio-de-desarrollador-web/)
+
+- Eduardo Fierro Video: [Cómo hacer un portafolio para programador](https://www.youtube.com/watch?v=68L5UgEzoQI)
+
+- Eduardo Fierro GitHub. [Portafolio y CV](https://github.com/eduardofierropro/Portafolio-y-CV)
+
+
+
+```{r , echo=FALSE, out.width='60%', fig.align='right', fig.cap=''}
+knitr::include_graphics("https://sergioescriba.com/wp-content/uploads/2020/08/crear-portfolio-online.jpg")
+```
+
+.tiny[
+Imagen: https://sergioescriba.com/crear-portafolio-online-consejos/
+]
+
+---
+## GitHub
+
+.content-box-yellow[
+Github es un portal creado para alojar el código de las aplicaciones de cualquier desarrollador, compartir proyectos o colaborar.
+]
+
+Se trata de una de las principales plataformas para crear proyectos abiertos de herramientas y aplicaciones, y se caracteriza sobre todo por sus funciones colaborativas.
+
+--
+
+- Manténte activo en GitHub, subiendo todo el software que desarrolles (aún tareas).
+- Contribuye al código abierto de esta plataforma, ya sea con algunos componentes reutilizables que hayas usado o con proyectos propios.
+
+```{r , echo=FALSE, out.width='30%', fig.align='right', fig.cap=''}
+knitr::include_graphics("https://lthub.ubc.ca/files/2021/06/GitHub-Logo.png")
+```
+
+---
+## Sitio web profesional
+
+.content-box-yellow[
+
+Tu página web es tu tarjeta de presentación en el mundo online. 
+]
+
+--
+
+Tu página web debe difundir tus habilidades. De tal modo que cuando alguien llegue a la página principal se lleve una idea de lo que haces.
+
+.pull-left[
+
+- [Samuel Reed el CTO de Bitmex](https://www.strml.net/)
+
+- [Robby Leonardi](http://www.rleonardi.com/)
+
+.tiny[
+Fuente: [5 Pasos para desarrollar tu marca personal como programador ](https://talently.tech/blog/desarrollar-marca-personal-programador/)
+]
+
+]
+
+.pull-right[
+```{r , echo=FALSE, out.width='80%', fig.align='left', fig.cap=''}
+knitr::include_graphics("https://www.ingeniovirtual.com/wp-content/uploads/sitio-web-marca-personal.jpg")
+```
+
+.tiny[
+[Imagen fuente](https://www.ingeniovirtual.com/diseno-web/diseno-web-marca-personal/)
+]
+
+]
+---
+## Sitio web profesional: contenido
+
+Usar gitHubPages o comprar tu propio dominio
+
+- **Home**  
+  Perfil al que te quieres dedicar
+  Ligas a redes sociales: linkedIn, GitHub
+
+- **Trabajos ( portafolio )**
+  Enlaces a gitHub donde esta el proyecto
+  Ligas a proyectos en el web
+  Contar los proyectos que has hecho.
+  Incluye sus testimonios u opiniones en tu página web de clientes.
+
+- **About**
+  Story Telling: que te motiva a programar, sobre qué quieres trabajar, tu formación.
+
+
+.tiny[
+Fuente: [Cómo hacer un portafolio para programador](https://www.youtube.com/watch?v=68L5UgEzoQI)
+]
+
+---
+## Tarea
+
+- Crea o actualiza tu perfil de LinkedIn con las habilidades que hasta ahora has adquirido. No importa el nivel (nivel: básico, medio, avanzado, experto).
+
+- Selecciona 1 o 2 programas que hayas entregado como tarea y que quisieras que formen parte de tu portafolio digital
 
 

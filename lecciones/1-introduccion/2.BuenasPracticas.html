@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Marca Personal como Desarrollador de Software: Sitio web y GitHub</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.18/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Marca Personal como Desarrollador de Software: Sitio web y GitHub
+]
+.institute[
+### Centro de Ciencias Genómicas, UNAM
+]
+.date[
+### First version: yyy-mm-dd; Last update: 2023-04-24
+]
+
+---
+
+
+
+
+&lt;style type="text/css"&gt;
+/* From https://github.com/yihui/xaringan/issues/147  */
+.scroll-output {
+  height: 80%;
+  overflow-y: scroll;
+}
+/* https://stackoverflow.com/questions/50919104/horizontally-scrollable-output-on-xaringan-slides */
+pre {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+&lt;/style&gt;
+
+## Contenido del Taller
+
+
+1. Introducción
+
+
+2. **Preparar mi software para el portafolio de proyectos (buenas prácticas)**
+
+
+3. Como construir un portafolio de proyectos
+       - Markdown
+       - Rstudio y Rmarkdown
+       - Git y GitHub
+       
+4. Como construir mi página web personal
+      - GitHubPages
+
+
+
+---
+# Un portafolio de proyectos
+
+.content-box-blue[
+
+"Un portfolio es una especie de **carpeta, contenedor o lugar** que reúne el conjunto de **trabajos realizados** por un profesional a lo largo de su trayectoria. Te preguntarás, ¿Qué pasa si aún no dispongo de experiencia? ¿No puedo tener mi Portfolio? Aunque no tengas experiencia, muchos profesionales, como los del sector de la programación tienen la suerte de incluir **ejercicios, prácticas o proyectos personales**, aquí la inexperiencia no es un importante ni fundamental. Céntrate en demostrar lo que sabes hacer."
+
+]
+
+.tiny[
+[Portafolio de Programador por Alfredo Barragán](https://openwebinars.net/blog/portfolio-de-programador-5-herramientas-y-plataformas-que-te-ayudan-generarlo/)
+]
+
+---
+# Un portafolio de proyectos de programador
+
+.content-box-blue[
+"Es básico e imprescindible que tu portfolio de programador incluya el **código fuente** de tus proyectos, para que se puedan validar tus habilidades y competencias profesionales e intentar describir aspectos de su funcionamiento. [Ejemplo]( https://github.com/jvanheld/SARS-CoV-2_origins) "
+]
+
+--
+
+
+- "Añade addons al archivo readme.md que permitan verificar diferentes aspectos de configuración de tu software, [ejemplo](https://github.com/googleworkspace/add-ons-samples).
+
+- Despliega tu proyecto en algunos de los servicios gratuitos existentes, tales como Heroku o Netflily, para apreciar otros aspectos más visuales o de composición, aparte de la sintaxis propia del lenguaje de programación utilizado."
+
+
+.tiny[
+[Portafolio de Programador por Alfredo Barragán](https://openwebinars.net/blog/portfolio-de-programador-5-herramientas-y-plataformas-que-te-ayudan-generarlo/)
+]
+
+---
+## Ejercicio
+
+Revisa los siguientes portafolios y dinos que piensas del software que han desarrollado:
+
+- [Dr. José Alquicira](https://github.com/joseah)
+
+- [Dr. Leonardo Collado](https://github.com/lcolladotor)
+
+- [Ing Pablo Peña]()
+
+- [Dr. Jacques Van Helden](https://github.com/jvanheld)
+
+---
+# ¿Qué software escoger para mi portafolio?
+
+
+**Céntrate en tus proyectos principales**. No pongas contenido por rellenar, los proyectos sin importancia o de interés incluso pueden ser contraproducentes. Es mucho mejor, que expongas *proyectos bien terminados, refactorizados y prestando especial atención a la calidad del código*. En definitiva, el contenido que subas a tu portfolio, debe disponer de una buena presencia y ser profesional, por eso es contraproducente que expongas demasiados proyectos que están inacabados o con malas praxis.
+
+**Lógica y coherencia con tu perfil profesional**. Tu portfolio debe *reflejar tu nivel de conocimiento y ser coherente con tu perfil profesional*. Por ejemplo, si buscas trabajo desarrollando proyectos mediante el lenguaje de programación conocido como JAVA, céntrate en poner este tipo de experiencias y no ampliar demasiado tu abanico de conocimientos.
+
+.tiny[
+[Portafolio de Programador por Alfredo Barragán](https://openwebinars.net/blog/portfolio-de-programador-5-herramientas-y-plataformas-que-te-ayudan-generarlo/)
+]
+
+---
+## Software Profesional
+
+La **Ingeniería de Software** (IS) es una de las ramas de las ciencias de la computación que estudia la creación de **software confiable y de calidad**, basándose en métodos y técnicas de ingeniería, y brindando soporte operacional y de mantenimiento. 
+
+La IS requiere llevar a cabo varias tareas agrupadas en etapas, al conjunto de estas etapas se le denomina **ciclo de vida**: Requisitos, Análisis, Diseño, Codificación y Pruebas. .tiny[
+[Wikipedia: Ing. de Software](https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software)]
+
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="https://agenciadigitalamd.com/wp-content/webp-express/webp-images/uploads/2021/04/ciclos-de-desarrollo-de-software-800x793-1-768x761.jpg.webp" alt="Ciclo de desarrollo de Software" width="45%" /&gt;
+&lt;p class="caption"&gt;Ciclo de desarrollo de Software&lt;/p&gt;
+&lt;/div&gt;
+
+---
+## Productos de trabajo
+
+
+- Doc. de Descripción del Proyecto
+- Doc. Especificación de Requisitos
+- Doc. de Análisis y Diseño
+- Prototipos
+- Documento de Pruebas
+
+
+- Código Fuente apegado a estándares.
+- Manual de Usuario
+- Manual de Operación
+- Manual de Instalación
+
+
+--
+
+**¿demasiado?**
+
+---
+## Prácticas mínimas para Software de tu portafolio
+
+- Documentación de Configuración, uso y expectativas del código (README).
+
+- Control de Versiones
+
+- Pruebas
+
+- Estándares y buenas prácticas de Codificación
+
+---
+
+## Documentación de Configuración, uso y expectativas del código.
+
+El archivo README
+
+-  Debería ser posible para una persona motivada **sin conocimiento previo del proyecto obtener una copia del código**, ejecutarlo y luego hacer un uso productivo del software, siguiendo solo los pasos incluidos en un **archivo README** o "introducción".
+
+- Documentar los **requisitos de configuración del software**, incluidos los números de **versión específicos de los lenguajes de programación, paquetes, módulos u otros programas utilizados**. Si no es posible ejecutar el software en otros entornos (portabilidad), al menos debería ser posible replicar la configuración del autor.
+
+- [derfinder by Leonardo Collado](https://github.com/lcolladotor/derfinder)
+
+- [regutools](https://github.com/josschavezf/regutools)
+
+---
+## Ejercicio
+
+1. Crea la siguiente estructura de carpetas
+
+```
+taller-marcap
+├── chat-gpt-app
+│   ├── config
+│   ├── docs
+│   ├── lib
+│   ├── test
+│   ├── results
+│   └── src
+├── my-home-page
+└── templates
+```
+
+    
+2. Abre una herramienta de texto plano y haz un *template* del archivo README para que lo uses en todos tus programas/software de tu portafolio. Guárdalo en la carpeta *templates* como README.txt
+
+
+
+---
+## Control de Versiones
+
+- Es fundamental para la reproducibilidad, mantenimiento y colaboración llevar el control de versiones de nuestro software.
+
+- Un sistema de control de versiones funciona como un rastreador de cambios intencionales, lo que permite a los autores registrar cambios significativos en su código como "confirmaciones" en un registro permanente. Git es muy usado en la comunidad.
+
+[Ver regutools history](https://github.com/josschavezf/regutools/commits/devel)
+
+---
+## Pruebas, preferentemente unitarias
+
+- Las pruebas **reducen el riesgo** de que los **resultados** obtenidos en la investigación **sean erróneos**, al descartar fallas debido a un comportamiento incorrecto del software.
+
+- Sugerimos pequeñas pruebas de componentes aislados, llamadas **pruebas unitarias**, que brindan una buena retroalimentación sobre lo que salió mal cuando se informa una falla en la prueba y motivan la descomposición de códigos en pequeñosmódulos y procedimientos que facilitan compartir y reutilizar. 
+
+- Las pruebas deben considerarse **parte de la documentación del software**, ya que encapsulan información sobre el comportamiento esperado del software. Las pruebas deben ser parte de la distribución de software estándar, junto con la documentación de cómo ejecutar las pruebas
+
+Un documento adicional de pruebas es lo recomendable, aunque algunos lo indican como ejemplos dentro del encabezado.
+
+
+---
+## Codificación
+
+Aprender a programar es relativamente sencillo, en internet encontrarás cientos de tutoriales.Pero lo realmente complicado y que se adquiere tras mucha práctica, es programar de forma estructurada, precisa y rigurosa, digase software de calidad.
+
+* Dividir los desarrollos en fases o entregables.
+--
+
+* Coloque un breve comentario explicativo al comienzo de cada programa.
+--
+
+* Descomponer programas en funciones.
+--
+
+* Sea implacable en la eliminación de la duplicación. (DRY: don´t repear yourself)
+--
+
+* Busque siempre bibliotecas de software bien mantenidas que hagan lo que necesita.
+--
+
+* Pruebe las bibliotecas antes de confiar en ellas.
+--
+
+* Asigne nombres significativos a las funciones y variables.
+--
+
+* Haga explícitas las dependencias y los requisitos.
+--
+
+* No comente ni descomente secciones de código para controlar el comportamiento de un programa.
+--
+
+* Proporcione un ejemplo simple o un conjunto de datos de prueba.
+--
+
+* Envíe el código a un repositorio que emita DOI de buena reputación.
+--
+
+* Estandarizar las reglas del desarrollo (snakecase, camelCase) [PEP8](https://legacy.python.org/dev/peps/pep-0008/)
+--
+
+* Código explícito, Simple, No demasiado anidado.
+--
+
+* Comente tu código. Redacta sentencias simples.
+
+---
+# Práctica
+
+1. Ir a https://github.com/rsa-tools/rsat-code
+
+2. Checa como esta organizada la carpeta.
+
+3.  Analiza el programa [infer-operon](https://github.com/rsa-tools/rsat-code/blob/master/perl-scripts/infer-operons) e indica que buenas practicas aplica. 
+
+4. Analiza el programa [random-motif](https://github.com/rsa-tools/rsat-code/blob/master/python-scripts/random-motif) e indica que buenas practicas aplica.
+
+5.  Analiza el programa [local-word-analysis](https://github.com/rsa-tools/rsat-code/blob/master/python-scripts/local-word-analysis) e indica que buenas practicas aplica.
+
+
+---
+# Encabezado
+
+.tiny[
+```{}
+
+NAME
+       ramdom-motif
+
+VERSION
+        1.0
+
+AUTHOR
+        Matthieu Defrance &lt;matthieu.dc.defrance@ulb.ac.be&gt;
+
+DESCRIPTION
+        random motif generator
+
+CATEGORY
+        motifs
+
+USAGE
+        ramdom motif [OPTIONS] 
+
+ARGUMENTS
+    --version             show program's version number and exit
+    -h, --help            show this help message and exit
+    -v #, --verbosity=#   set verbosity to level #
+                              0 no verbosity
+                              1 max verbosity
+    -o #, --output=#      output results to #
+                          if not specified, the standard output is used
+    
+SEE ALSO
+        random-sites
+        implant-sites
+
+```
+
+]
+
+---
+
+# Algoritmo, en el código como primera versión.
+
+```
+.....
+
+ARGUMENTS
+    --version             show program's version number and exit
+    -h, --help            show this help message and exit
+    -v #, --verbosity=#   set verbosity to level #
+                              0 no verbosity
+                              1 max verbosity
+    -o #, --output=#      output results to #
+                          if not specified, the standard output is used
+    -i #, --input=#       input file
+
+'''
+
+## 1. Leer argumentos
+
+## 2. Leer archivo de datos
+
+## 3. Calcular suma
+
+## 4. Imprimir resultados
+
+
+```
+
+---
+## Demostración de Software
+
+.content-box-blue[
+
+"ChatGPT es un prototipo de chatbot de inteligencia artificial desarrollado en 2022 por OpenAI que se especializa en el diálogo. El chatbot es un gran modelo de lenguaje, ajustado con técnicas de aprendizaje tanto supervisadas como de refuerzo.​ Se basa en el modelo GPT-4 de OpenAI, una versión mejorada de GPT-3."
+
+
+.tiny[
+Fuente: [Wikipedia](https://es.wikipedia.org/wiki/ChatGPT)
+]
+]
+
+Código tomado desde [mouredev](https://gist.github.com/mouredev/58abfbcef017efaf3852e8821564c011)
+
+
+---
+# Práctica
+
+1. Descarga el programa chatgpt-app.py y config.py, colocalos dentro del proyecto chat-gpt-app de la estructura de carpetas de `taller-marcap`.
+
+2. Revisa el código
+
+3. Aplica las buenas prácticas al código (encabezado, README, comentarios internos, etc.)
+
+
+---
+
+### Bibliografía
+
+.tiny[
+1. Imelda Avalos Flores. (2010). I. Introducción a la programación. Junio 14, 2017, de Universidad Autónoma de Nayarit Sitio web: http://correo.uan.edu.mx/~iavalos/FP/FP1.html
+
+2. SENA. (2017). Etapas del ciclo de vida. Junio 14, 2017, de wikispaces Sitio web: https://ciclodevidasoftware.wikispaces.com/ETAPAS+DEL+CICLO+DE+VIDA
+
+3. Bernal, L. A.. (Agosto 11, 2014). Cómo hacer una prueba de escritorio. Junio 10, 2017, de aztlek.org Sitio web: https://aztlek.org/2014/08/11/como-hacer-una-prueba-de-escritorio/
+
+4. https://islascruz.org/blog/2018/07/25/buenas-practicas-en-python/
+
+5. https://www.educ.ar/recursos/132522/consejos-y-buenas-practicas-para-programar-en-python
+
+6. https://www.tithink.com/es/2018/06/13/12-buenas-practicas-para-el-desarrollo-software/
+
+7. https://wiki.python.org/moin/PythonTestingToolsTaxonomy
+
+8. ¿Por qué es importante la Ingeniería de Software? https://medium.com/@FunktionellMx/por-qu%C3%A9-es-importante-la-ingenier%C3%ADa-de-software-a4000134f6e2
+
+9. Metodologías de desarrollo de software: ¿qué son? 
+https://blog.becas-santander.com/es/metodologias-desarrollo-software.html
+
+10. Good enough practices in scientific computing. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
+
+11. Para generar referencias automáticamente: http://www.cva.itesm.mx/biblioteca/pagina_con_formato_version_oct/apaweb.html
+
+]
+
+---
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+  .logo {
+    background-image: url(img/ccg-pgc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 110px;
+    height: 128px;
+    z-index: 0;
+  }
+  </style>
+  
+  <script>
+  document
+    .querySelectorAll(
+      '.remark-slide-content' +
+      ':not(.title-slide)' +
+      // add additional classes to exclude here, e.g.
+      // ':not(.inverse)' +
+      ':not(.hide-logo)'
+    )
+    .forEach(el => {
+      el.innerHTML += '<div class="logo"></div>';
+    });
+  </script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
