@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Marca Personal como Desarrollador de Software: Sitio web y GitHub</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.18/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Marca Personal como Desarrollador de Software: Sitio web y GitHub
+]
+.institute[
+### Centro de Ciencias Genómicas, UNAM
+]
+.date[
+### First version: yyy-mm-dd; Last update: 2023-04-25
+]
+
+---
+
+
+
+
+&lt;style type="text/css"&gt;
+/* From https://github.com/yihui/xaringan/issues/147  */
+.scroll-output {
+  height: 80%;
+  overflow-y: scroll;
+}
+/* https://stackoverflow.com/questions/50919104/horizontally-scrollable-output-on-xaringan-slides */
+pre {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+&lt;/style&gt;
+
+
+## Contenido
+
+1. ¿Qué es Markdown?  
+2. Lenguaje de marcado  
+2.1 Encabezados    
+2.2 Formatos (negritas, cursiva, )  
+2.3 Listas  
+2.4 Código  
+2.5 Links  
+2.6 Imágenes  
+2.7 Tablas  
+
+---
+## Objetivo
+Al finalizar la lección, el alumno podrá usar lenguaje de marcado __markdown__ para la generación de documentación.
+
+---
+## Documentación de Software 
+
+.content-box-blue[
+La documentación del software es el proceso de creación de documentación para el software con el fin de hacerlo más **intuitivo y fácil de usar**. Es un documento que contiene información general sobre **cómo se ha creado el software, cómo funciona y otros detalles**. 
+
+]
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="https://media.web.userguiding.com/uploads/2022/01/22011613/what-is-software-documentation-2048x684.jpg" alt="Ciclo de desarrollo de Software" width="70%" /&gt;
+&lt;p class="caption"&gt;Ciclo de desarrollo de Software&lt;/p&gt;
+&lt;/div&gt;
+
+.tiny[
+[6 Herramientas de Documentación de Software by Alican Bektas ](https://userguiding.com/es/blog/herramientas-documentacion-software/#ftoc-heading-9)
+]
+
+---
+## Documentación de Software 
+
+Vimos que **Un portafolio de proyectos** del programador Profesional debe incluir al menos un **README** que describa lo que hace y como se usa el software.
+
+Si deseas **controlar y versionar la documentación**, git controla archivos de texto plano (no binarios .docx), por eso necesitamos crear la documentación en texto, pero que sea fácil de leer y bonito.
+
+---
+## ¿Qué es Markdown?  
+
+__Markdown__ es un lenguaje de marcado ligero que permite agregar formatos como encabezados, negritas, cursivas, listas, etc., a un texto sin formato. Representa un sistema de escritura minimalista con el que podemos escribir sin muchas preocupaciones, y que puede ser exportado a otros formatos con facilidad.  
+
+Tiene una sintaxis más simple que HTML, con markdown no hay que preocuparse por abrir y cerrar etiquetas.  
+
+Su adaptabilidad y facilidad de manejo lo convierte en una herramienta de poderosa legibilidad, usada por GitHub.  
+
+---
+## ¿Qué es Markdown?  
+
+
+__Ventajas de usar Markdown__  
+
+- Escribir para web es más rápido y cómodo. Una vez que te acostumbras y conoces la sintaxis, completas el texto más rápido.  
+- Facilidad de uso debido a la sintaxis que emplea.  
+- Es más difícil cometer errores de sintaxis.  
+- Es perfecto para usarlo con editores de texto minimalistas.  
+- Puede compartirse fácilmente entre computadoras, entornos moviles, etc., quedando resuelto de este modo la incomodidad de dar formato a un texto a través de los sistemas  diferentes sistemas donde se encuentre.  
+
+---
+## Editores para Markdown
+
+_Windows_
+
+- MarkdownPad
+- DownMarker 
+- MarkPad
+- Laverna
+- Joplin
+
+_MacOS_  
+
+- Typora
+- MacDown
+
+_Linux_  
+
+- Springseed
+- Remarkable
+
+
+
+---
+## Encabezados 
+
+Para inidicar en cabezaados/títulos y subtítulos en nuestro documento se hace uso del caracter # al inicio del texto. Por cada # se interpretará como un nivel distinto, por ejemplo:
+
+Sintaxis: `# Título`   
+# Título  
+
+Sintaxis: `## Subtítulo`   
+## Subtítulo  
+
+
+Sintaxis: `### Sub-subtítulo`   
+### Sub-subtítulo  
+
+---
+## Formatos (negritas, cursiva, citas) 
+
+Para poner formato a nuestros documento haremos uso de:  
+
+
+Sintaxis: `**texto en negritas**`  
+**texto en negritas**  
+
+Sintaxis: `*texto en cursivas*`  
+*texto en cursivas*
+
+Sintaxis: `&gt; cita` 
+&gt; Texto de la cita    
+
+---
+## Listas
+
+Las **listas desordenadas** se colocan con un guión al principio de la línea.
+
+Sintaxis:  
+
+`- Elemento`  
+`- Otro elemento`  
+`- Otro más`  
+
+- Elemento
+- Otro elemento
+- Otro más  
+
+
+---
+## Listas 
+
+
+Las **listas ordenadas** se colocan con el índice numérico seguido de un punto.   
+
+Sintaxis:  
+
+`1. Primer elemento`  
+`2. Segundo elemento`  
+`3. Tercer elemento`  
+
+
+1. Primer elemento
+2. Segundo elemento
+3. Tercer elemento
+
+---
+## Código 
+
+Markdown permite insertar líneas o bloques de código mediante el caracter de acento invertido.  
+
+Sintaxis (línea):  
+
+&lt;img src="img/codigoLinea.png" width="450px" style="display: block; margin: auto;" /&gt;
+
+En este párrafo `esta parte sería código` y esta  ya no.  
+
+Sintaxis (bloque): Si el bloque incluye una o varias líneas de código, se deben colocar tres caracteres de acento invertido seguidos de un salto de línea.  
+
+&lt;img src="img/codigoBloque.png" width="450px" style="display: block; margin: auto;" /&gt;
+
+
+```
+// Esto en un bloque de código
+var x = 1;
+```
+
+
+---
+## Links
+
+Los enlaces se generan mediante corchetes y paréntesis. Pimero se indica el texto del enlace entre corchetes y luego la URL entre paréntesis.  
+
+Sintaxis:  
+
+Aquí puedes consultar el sitio del `[CCG](https://www.www.unam.mx/)`  
+
+Aquí puedes consultar el sitio del [CCG](https://www.ww.unam.mx/)  
+
+
+
+Si queremos convertir una URL en un enlace, se coloca dentro de caracteres menor qué y mayor qué &lt;&gt;.
+
+Sintaxis:  
+
+`&lt;https://www.ccg.unam.mx/&gt;`  
+
+&lt;https://www.ccg.unam.mx/&gt;
+
+
+---
+## Imágenes
+
+Podemos insertar imagenes existen diferentes alternativas:  
+
+1) Indicando entre corchetes un texto de identificación de la imagen, seguido de parentesis con la URL de la imagen y entre comillas el texto que queremos aparezca al poner el cursor sobre la imagen.  
+
+Sintaxis:  
+
+`![LogoMarkdown](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Markdown")`  
+
+
+![LogoMarkdown](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Markdown")
+
+
+
+---
+## Imágenes
+
+Otra alternativa es indicando la dirección de una imagen que tengamos en nuestra computadora:  
+
+Sintaxis:  
+
+`![](./img/facebook_icon.png "logo fb")`  
+
+
+![](./img/facebook_icon.png "logo fb")  
+__IMPORTANTE:__ Recuerda agrupar tus archivo markdown e imágenes una carpeta para tener todo en un solo lugar.  
+
+
+Una opción más usando código HTML para poder definir el tamaño de la imagen:  
+
+Sintaxis:  
+
+`&lt;img src="./img/logoMarkdown.png" width="50" height="50" /&gt;`  
+
+
+
+&lt;img src="./img/logoMarkdown.png" width="50" height="50" /&gt;
+
+
+
+---
+##  Tablas
+
+Para agregar una tabla, se usan guiones \--- para crear el encabezado de cada columna y barras verticales \| para separar cada columna. 
+
+Sintaxis:  
+
+```
+| Columna 1   | Columna 2   |
+| ----------- | ----------- |
+| Texto       | Text        |
+| Texto       | Text        |
+```  
+
+
+
+| Columna 1   | Columna 2   |
+| ----------- | ----------- |
+| Texto       | Text        |
+| Texto       | Text        |
+
+__Nota:__ También podemos usar un __Generador de tablas en Markdown__ &lt;https://www.tablesgenerator.com/markdown_tables&gt;
+
+---
+## Conclusión 
+
+Haciendo uso del lenguaje Markdown podemos crear documentos, en texto plano, con distintos estilos Además, podemos exportarlos a diferentes formatos como PDF, HTML, Word, etc.
+
+
+![](./img/writeMarkdown.jpeg) 
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+  .logo {
+    background-image: url(img/ccg-pgc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 110px;
+    height: 128px;
+    z-index: 0;
+  }
+  </style>
+  
+  <script>
+  document
+    .querySelectorAll(
+      '.remark-slide-content' +
+      ':not(.title-slide)' +
+      // add additional classes to exclude here, e.g.
+      // ':not(.inverse)' +
+      ':not(.hide-logo)'
+    )
+    .forEach(el => {
+      el.innerHTML += '<div class="logo"></div>';
+    });
+  </script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
