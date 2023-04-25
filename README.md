@@ -36,12 +36,12 @@ Para ganar visibilidad hay que hacer varias cosas, pero en este curso abordaremo
 2. Preparar mi software para el portafolio de proyectos (buenas prácticas)
 
 3. Como construir un portafolio de proyectos
-       - Markdown
-       - Rstudio y Rmarkdown
-       - Git y GitHub
+   - Markdown
+   - Rstudio y Rmarkdown
+   - Git y GitHub
        
 4. Como construir mi página web personal
-      - GitHubPages
+   - GitHubPages
 
 
 #### Maintainers:
