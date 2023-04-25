@@ -12,9 +12,9 @@ Para ganar visibilidad hay que hacer varias cosas, pero en este curso abordaremo
 
 #### Requisitos del curso
 
-Computadora personal con acceso a internet
+- Computadora personal con acceso a internet
 
-- Herramientas previamente instaladas
+Herramientas previamente instaladas
 - R  y RStudio (https://posit.co/download/rstudio-desktop/)
 - Git  (https://gitforwindows.org/)
 - VisualStudioCode u otro editor (https://code.visualstudio.com/download)
