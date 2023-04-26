@@ -46,7 +46,7 @@ pre {
 # GitHub
 
 ## Objetivo
-Al finalizar la lección, conoceremos parte del funcionamiento de GitHub y podremos enlazar .....
+Al finalizar la lección, conoceremos parte del funcionamiento de GitHub y podremos enlazar nuestros repositorios locales para tenerlos en la nube, o bien, hacerlos disponibles para el público.  
 
 
 ---
@@ -174,7 +174,7 @@ GitHub Desktop para GNU/Linux no está oficialmente respaldada por GitHub.
 
 ## Actividad
 
-- Desde GitHub realiza un cambio a reverse-complement.py
+- Desde GitHub realiza un cambio a chatgpt-api.py  
 
 - Realiza el commit  
 
@@ -191,7 +191,7 @@ GitHub Desktop para GNU/Linux no está oficialmente respaldada por GitHub.
 
 ## Actividad
 
-- Desde tu repositorio local modifica el archivo reverse-complement.py
+- Desde tu repositorio local modifica el archivo chatgpt-api.py  
 
 - Realiza el commit desde la consola   
 
