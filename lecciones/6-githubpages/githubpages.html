@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 ## GitHub Pages
 ### Shirley Alquicira
 ### CCG-PGC
-### 2023/04/12 (updated: 2023-04-24)
+### 2023/04/12 (updated: 2023-04-26)
 
 ---
 
@@ -120,24 +120,45 @@ _Paso 2:_ Crear un repositorio para nuestra página web
 &lt;img src="img/createRepository3.png" width="400px" style="display: block; margin: auto;" /&gt;
 ---
 
-_Paso 3:_ Crear el archivo index.Rmd
+_Paso 3:_ Crear el el contenido de la página web
 
 * Abrir el programa RStudio  
 
-* Crear un archivo R Markdown, como Título: Mi sitio personal y Autor: [Nombre completo]   
+* Crear un proyecto: Ir a menú File -&gt; New Project -&gt; New Directory -&gt; Postcards Website     
+
+* Directory name: MiSitioWeb  
+
+* Elegir el directorio de trabajo  
+
+* Seleccionar el template que usaremos: Trestles  
+
+* Crear proyecto  
   
-
-* Guardar el documento en nuestra máquina con el nombre index.Rmd   
-Se sugiere definir una carpeta para organizar todos los elementos que contemplará la página web.
-
-* Revisar la estructura del archivo rmd (cabecera: título, autor y fecha, sentencias de R, contenido)
-
 ---
 
 
 ## Creación del sitio web
 
-_Paso 4:_ Crear el archivo html
+_Paso 4:_ Editar el archivo index.Rmd
+
+* Revisar la estructura del archivo  
+
+* Cambiar nombre y fotografía
+
+* Definir los enlaces de nuestras redes sociaes (Home)  
+
+* Definir las secciones de nuestra página web: Portafolio. About  
+
+_Portafolio_ ¿Cuáles son mis trabajos? Poner liga a repositorios en GitHub  
+_About_ ¿Quién soy? A qué me dedico? mis habilidades, mis pasatiempos, etc.  
+
+ Nota: usar el etiquetado markdown para definir secciones, viñetas, etc.
+
+---
+
+## Creación del sitio web
+
+_Paso 5:_ Generar el archivo index.html
 
 * Ejecutar el arhivo Rmd con la opción Knit para generar el html  
 
@@ -145,36 +166,9 @@ _Paso 4:_ Crear el archivo html
 
   El contenido se encuentra etiquetado y con formato especial, por ejemplo: negrita, italica, links, tablas, imágenes, etc.
 
-* Asignar un tema a la página web _theme:_ "default", "cerulean", "journal", "flatly", "darkly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", "yeti".
 
 Nota: en la carpeta donde guardamos el archivo Rmd se generará el html.
 
----
-
-
-## Creación del sitio web
-
-_Paso 5:_ Editar el contenido del index.Rmd
-
-* Cambiar el título por nuestro nombre completo. Comentar el campo author y date (usar --). Agregar las siguientes secciones y registrar los datos correspondientes:
-
-Datos personales  
-Fecha de nacimiento:  
-Edad:  
-Nacionalidad:  
-    
-Formación Académica  
-Maestría en [nombre]  
-[Período]  
-Licenciatura en [nombre]  
-[Período]  
-    
-Contacto y redes sociales  
-Correo electrónico:  
-Facebook: [username]  
-Twitter: [username]  
-    
- Nota: usar el etiquetado markdown para definir secciones, viñetas, etc.
 ---
 
 ## Creación del sitio web
@@ -204,52 +198,31 @@ _Paso 7:_ Configurar el sitio web en GitHub
 
 * Ir a la opción __Source__ y seleccionar la rama _main_ y directorio _root_
 
-* Con esto obtendremos la url de nuestro sitio web, por ejemplo: https://shirleyah.github.io/
+* Con esto obtendremos la url de nuestro sitio web, por ejemplo: https://shirleyah.github.io/  
 
----
-
-
-## Creación del sitio web
-
-_Paso 8:_ Agregar links a nuestras redes sociales
-
-* Ir al archivo Rmd y agregar el link a nuestro perfil de Facebook y Twitter
-
-* Usar la sintaxis : ` [Link](url) `  
-
-Ejemplo:
-
-` [shirley.alquicira.1](https://www.facebook.com/shirley.alquicira.1) `
-
-` [shirley_ah](https://twitter.com/shirley_ah) ` 
-
----
-## Creación del sitio web  
-
-_Paso 9:_ Agregar imágenes a la página web
-
-* Descargar los logos de Facebook y Twitter. Se recomienda crear una carpeta __/img__
-
-* Agregar logos a las secciones correspondientes
-
-* Usar la sintaxis : ` ![Image](src) `
-
-Ejemplo:  
-
-` ![](./img/Twitter_icon.png) Twitter: `
-
-* Subir los cambios a GitHub (Add file -&gt; Upload files).  
-
-Nota: arrastrar los archivos a GitHub.
 ---
 
 ## Templates  
 
-Exsten muchos diseños o templates creados por otras personas o grupos que podemos reutilizar para diseñar nuesto sitio web.
+Exsten muchos diseños o templates creados por grupos que podemos reutilizar para diseñar nuesto sitio web.
 
-[GitHub Pages themes](https://github.com/pages-themes)
+[GitHub Pages themes](https://github.com/pages-themes)  
+
+O bien, utilizar formatos realizados por otras personas:  
+
+[lcolladotor](https://github.com/lcolladotor/lcolladotor.github.io.envivo)  
+
+- Haciendo un fork para usar el repositorio de código de manera independiente.  
 ---
 
+## Conclusión
+
+Contar con un sitio web personal nos permite tener presencia en el mundo digital, mostrando al público nuestro trabajo, habilidades, experiencia, etc.
+
+Adicionalmente, tener una cuenta en GitHub nos ayduará como carta de presentación de los proyectos que hemos desarrollado, así como en los que hemos colaborado, además de las buenas prácticas de desarrollo de software que implementamos.
+
+
+---
 
 
 

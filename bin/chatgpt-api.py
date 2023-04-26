@@ -19,6 +19,9 @@ def main():
 
     openai.api_key = config.api_key
 
+    ## api_key = "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"
+
+
     print("💬 [bold green]ChatGPT API en Python[/bold green]")
 
     table = Table("Comando", "Descripción")
