@@ -1,5 +1,5 @@
 
-# # chatgpt-api
+# chatgpt-api
 
 `chatgpt-api` es una interfaz CLI (Command Line Interface) en python para interactuar con el chatbot chat-gpt. El programa usa el modelo `gpt-3.5-turbo` ver los [modelos disponibles](https://platform.openai.com/docs/models/overview).
 
