@@ -190,7 +190,7 @@ _Paso 6:_ Subir los cambios a GitHub
 
 * Hacer clic en el enlace __Uploading an existing files__
 
-* Localizar/arrastrar los archivos index.Rmd e index.html a GitHub
+* Localizar/arrastrar los archivos del proyecto a GitHub
 
 * Agregar un comentario
 

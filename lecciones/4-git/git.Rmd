@@ -240,9 +240,7 @@ knitr::include_graphics("img/git-github.png")
 5. Crear un programa y agregarlo a git  
 6. Commit  
 7. Explorando el historial  
-8. Comparando archivos  
-9. Ignorando archivos  
-.  
+
 
 ```{r, out.width = "450px",fig.align='center'}
 knitr::include_graphics("img/gitLocal.png")
@@ -482,18 +480,43 @@ indica el estado de los archivos que pueden ser controlados por Git, o aquellos 
 
 ---
 
+
+## Resumen
+
+__git init__: Inicializa un repositorio Git.  
+
+__git add__: pone los archivos al área de preparación (staging area).    
+
+__git commit__:guarda el contenidos del área de preparación como un nuevo commit en el repositorio local. Indicando por medio de un mensaje los cambios realizados.
+
+__git status__:indica el estado de los archivos que pueden ser controlados por Git, o aquellos que ya están controlados pero se han modificado.  
+
+__git log__: lista todos los commits realizados en el repositorio. 
+
+---
+
 ## Actividad
 
-1. Editar el programa: __chatgpt-api.py__. Cambiar las descripciones del menú presentado en **table.add_row**   
+1. Agregar/modificar el encabezado al programa chatgpt-api.py    
+
+2. Indicar a Git que controle los cambios de mi programa  
+`git add chatgpt-api.py`
+
+3. Confirmar los cambios realizados  		
+`git commit –m “Mensaje”`
+
+---
+
+## Actividad
+
+1. Editar el archivo readme.md   
 
 2. Conocer el estado del repositorio  
 `git status` 
 
-3. Identificar archivos sin seguimiento  
-`git status -u`  
 
-4. Indicar a Git que controle los cambios de mi programa  
-`git add chatgpt-api.py`
+3. Indicar a Git que controle los cambios de mi programa  
+`git add readme.md`
 
 5. Confirmar los cambios realizados  		
 `git commit –m “Mensaje”`
@@ -501,77 +524,27 @@ indica el estado de los archivos que pueden ser controlados por Git, o aquellos 
 
 ---
 
-## ¿Cuándo restaurar una versión?  
 
-Revisar el estado del repositorio  
-`$ git status` 
+## ¿Qué más puedo hacer con Git?
 
-Identificando los cambios realizados  
-`$ git diff [#commit] chatgpt-api.py` 
+- Restaurar versiones  
 
-Restaurar el programa al commit anterior  
-`git checkout [IdCommit] chatgpt-api.py`
+- Identificar las diferencias entre las versiones de los archivos  
 
+- Ignorar archivos  
 
+En conjunto Git + GitHub:  
 
----
+- Tener nuestro código en la nube  
 
-## Ignorando archivos
+- Colaborar con otros proyectos  
 
-**¿Qué pasa si hay archivos que no quiero controlar?**  
+- Hacer comunidad y conocer a más programadores  
 
-Por ejemplo, archivos de respaldo creados automáticamente por nuestro editor, por el sistema operativo, o aquellos archivos de prueba creados durante el análisis de nuestros datos, archivos de configuración (passwords)...  
-
-**Archivo:    .gitignore**
-
-Crear directorio y archivos de prueba  
-`$ mkdir results`  
-`$ touch a.dat b.dat c.dat results/a.out results/b.out`  
-Comprobando el estado de nuestro repositorio  
-`$ git status`  
-Creando archivo .gitignore en el directorio raíz  
-`$ nano .gitignore`  
-Agregar las líneas:  
-`*.dat`   
-`results/`  
-Comprobando el estado de nuestro repositorio  
-`$ git status` 
-
----
-
-## Actividad
-
-Dado un archivo .gitignore con el siguiente contenido  
-
-`*.data`  
-`!*.data`  
-
-¿Cuál sería el resultado?  
-
-El modificador ! negará la primera instrucción en el archivo .gitignore, por lo que todos los archivos .data serán controlados.  
-
-
-
----
-
-## Resumen
-
-__git add__: pone los archivos al área de preparación (staging area)  
-
-__git commit__:guarda el contenidos del área de preparación como un nuevo commit en el repositorio local. Indicando por medio de un mensaje los cambios realizados
-
-__git status [-u]__:muestra el estado del repositorio, indicando los archivos que pueden ser guardados/controlados en el directorio de trabajo, archivos que pueden pasar al área de preparación y aquellos archivos que pueden pasar al repositorio
-
-__git log__: lista todos los commits realizados en el repositorio  
-
-__git diff__: Comparar un archivo vs un commit en particular  
-
-__git checkout__: Restaurar una versión  
- 
  
 ```{r, out.width = "100px",fig.align='right'}
 knitr::include_graphics("img/admiracion.png")
 ```
 
-
 ---
+
