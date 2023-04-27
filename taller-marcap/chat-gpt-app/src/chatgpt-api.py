@@ -8,7 +8,8 @@ AUTHOR
 	Hely Salgado 
 
 DESCRIPTION
-	interfaz para chatgpt
+
+	interfaz CLI para chatgpt
 
 	El programa es una interfaz para interaccionar con chatpgt
 	usando el modelo gpt-3.5-turbo
@@ -24,7 +25,8 @@ USAGE
 	python chatgpt-api.py
 
 ARGUMENTS
-    none
+
+        none
 
 SEE ALSO
  	tomado de : https://gist.github.com/mouredev/58abfbcef017efaf3852e8821564c011
@@ -54,7 +56,7 @@ def main():
 
     print(table)
 
-    # Dando Contexto del asistente
+    # Dando Contexto al asistente
     context = {"role": "system",
                "content": "Eres un asistente que sabe todo sobre k-pop"}
     messages = [context]
@@ -71,10 +73,11 @@ def main():
 
         messages.append({"role": "user", "content": content})
 
+        # método que se comunica con la API de OpenAI para iniciar una solicitud de generación de respuestas
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo", messages=messages)
 
-        # una respuesta
+        # Se toma 1 respuesta
         response_content = response.choices[0].message.content
 
         messages.append({"role": "assistant", "content": response_content})
