@@ -1,4 +1,4 @@
-```
+"""
 NAME
        chatgpt-api.py
 
@@ -31,7 +31,7 @@ ARGUMENTS
 SEE ALSO
  	tomado de : https://gist.github.com/mouredev/58abfbcef017efaf3852e8821564c011
 
-```
+"""
 
 ##### librerias
 import openai  # pip install openai
